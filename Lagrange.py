@@ -1,5 +1,6 @@
+''' Inspiração: canal para tudo tem um código '''
 def Lagrange():
-    v = float(input("insira o valor inicial\n"))
+    v = float(input("insira o y a achar\n"))
     pts = int(input("insira a quantidade de pontos\n"))
     x, y = [], []
     for i in range(pts):
