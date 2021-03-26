@@ -1,12 +1,12 @@
 import numpy as np
 def Lagrange():
     v = np.poly1d([1,0])
-    pts = int(input("insira a quantidade de pontos\n"))
+    pts = int(input("insira o numero de pontos: "))
     x, y = [], []
     for i in range(pts):
-        var = float(input("insira o x \n"))
+        var = float(input("insira o x: "))
         x.append(var)
-        var = float(input("insira o y relativo ao x\n"))
+        var = float(input("insira o y relativo ao x: "))
         y.append(var)
     coefs = []
     for n in range(pts):
@@ -18,5 +18,5 @@ def Lagrange():
     resul = 0
     for n2 in range(pts):
         resul = resul + y[n2]*coefs[n2]
-    print("o resultado da interpolacao: ", resul);
+    print("o resultado da interpolacao:\n", resul);
 Lagrange()
