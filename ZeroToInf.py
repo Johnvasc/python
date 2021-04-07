@@ -31,9 +31,10 @@ def ZeroToInf(x0, n):
             res += 2*(fun(1/posiZi)*(1/fun(posiZi)**2))
         i += 1
         posiZi = posiZi+(hZi)
-    res += 0.5
+    res += 0.93908226
     res = (res)*(hZi/3)
     return res
+
 def Caller():
     result = 0
     x0 = float(input("Insira o limite inferior: "))
@@ -44,12 +45,10 @@ def Caller():
             result += SimpUmTerco(1, 0, n)
             x0 = 1
         result += ZeroToInf(x0, n)
+        
     else:
         xn = float(xn)
         result += SimpUmTerco(xn, x0, n)
-    print(result)
+    print("resultado:", result)
     
 Caller()
-
-
-
